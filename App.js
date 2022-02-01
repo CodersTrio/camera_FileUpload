@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import CameraScreen from './src/Screens/CameraScreen';
+import FileUpload from './src/Screens/FileUpload';
 
 
 export default function App() {
@@ -13,7 +14,7 @@ export default function App() {
   return (
     <View style={styles.container}>
 
-      {/* for camera on  */}
+      {/* for camera on 
       
       {
         count == 0 ?
@@ -33,7 +34,11 @@ export default function App() {
 
       {
         count ? <CameraScreen /> : <Text>Count : {count}</Text>
-      }
+      } */}
+
+
+      {/* for image upload  */}
+      <FileUpload />
 
 
 
@@ -49,6 +54,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-
-
 
