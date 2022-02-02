@@ -42,6 +42,9 @@ const FileUpload = () => {
   };
 
 
+  console.log("image uri : ", image);
+
+
 
 
 
